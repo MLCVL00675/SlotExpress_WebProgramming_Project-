@@ -1,0 +1,265 @@
+/* Importing Google Fonts - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #000000;
+}
+.container
+{
+  max-width: 2000px;
+  width:100%;
+  margin:0 auto;
+}
+
+.nav
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 60px;
+}
+
+.nav_logo
+{
+
+  left:10%;
+  bottom: 1rem;
+  font-size: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 0;
+  font-weight: 600;
+  
+}
+
+header
+{
+  position: fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  border-bottom: 2px solid #fff;
+}
+
+.menu_items
+{
+  display: flex;
+  list-style: none;
+  gap:30px;
+  font-weight: 600;
+}
+
+.menu_items a
+{
+  text-decoration: none;
+  color: #ffffffff;
+  transition: 0.2s ease;
+}
+
+.menu_items a:hover
+{
+  color:#19a463;
+}
+#root {
+  width: 100%;
+  padding: 0.6rem;
+  padding-top: 100px;
+  height: 100vh;
+  background: url(bg-dot.png),url(bg-dot.png),url(bg-round.png),url(bg-tree.png);
+  background-repeat: no-repeat;
+  background-position: 10px 10px, bottom 190px right 10px,left 55% top -1%,left 20% bottom -1px   ;
+}
+
+.login-container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 410px;
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container .form-title {
+  text-align: center;
+  font-size: 1.37rem;
+  font-weight: 600;
+  margin-bottom: 1.87rem;
+  font-weight: 600;
+}
+
+.login-container .social-login {
+  display: flex;
+  gap: 1.31rem;
+}
+
+.social-login .social-button {
+  display: flex;
+  gap: 0.81rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.75rem 0;
+  border-radius: 0.31rem;
+  align-items: center;
+  justify-content: center;
+  background: #F9F8FF;
+  border: 1px solid #1dbf73;
+  transition: 0.5s ease;
+  font-weight: 600;
+}
+
+.social-login .social-button:hover {
+  border-color: #19a463;
+  background: #cfcfcf;
+  
+}
+
+.social-login .social-button .social-icon {
+  width: 23px;
+}
+
+.login-container .separator {
+  position: relative;
+  margin: 1.5rem 0;
+  text-align: center;
+  background: #fff;
+}
+
+.login-container .separator span {
+  z-index: 1;
+  font-weight: 500;
+  color: #1dbf73;
+  position: relative;
+  background: #fff;
+  font-size: 1.06rem;
+  font-weight: 600;
+  padding: 0 0.9rem;
+}
+
+.login-container .separator::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  background: #1dbf73;
+  
+}
+
+.login-form .input-wrapper {
+  height: 54px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.login-form .input-field {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 1.06rem;
+  border-radius: 0.31rem;
+  border: 1px solid #1dbf73;
+  padding: 0px 1.25rem 0 3.12rem;
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+.login-form .input-field:focus {
+  border-color: #19a463;
+}
+
+.login-form .input-field::placeholder {
+  color: #1dbf73;
+}
+
+.login-form .input-wrapper i {
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  display: flex;
+  color: #1dbf73;
+  align-items: center;
+  transform: translateY(-50%);
+  transition: 0.2s ease;
+}
+
+.login-form .input-wrapper i:not(.eye-icon) {
+  left: 0.93rem;
+  pointer-events: none;
+}
+
+.login-form .input-field:focus ~ i:not(.eye-icon) {
+  color: #19a463;
+}
+
+.login-form .input-wrapper i.eye-icon {
+  display: none;
+  right: 0.93rem;
+  color: #19a463;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.login-form .input-wrapper .input-field:valid ~ .eye-icon {
+  display: flex;
+}
+
+.login-form .forgot-password-link {
+  display: block;
+  width: fit-content;
+  margin-top: -0.44rem;
+}
+
+.login-form .login-button {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 54px;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 2.19rem;
+  border-radius: 0.31rem;
+  background: #1dbf73;
+  transition: 0.3s ease;
+}
+
+.login-form .login-button:hover {
+  background: #19a463;
+}
+
+.login-container .signup-prompt {
+  text-align: center;
+  font-size: 1.06rem;
+  font-weight: 500;
+  margin: 1.75rem 0 0.31rem;
+}
+
+.login-container a {
+  color: #19a463;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
